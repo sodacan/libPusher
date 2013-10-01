@@ -16,7 +16,9 @@
 #import "PTPusherErrors.h"
 #import "PTPusherChannelAuthorizationOperation.h"
 
+#ifndef kPUSHER_HOST
 #define kPUSHER_HOST @"ws.pusherapp.com"
+#endif
 
 NSURL *PTPusherConnectionURL(NSString *host, NSString *key, NSString *clientID, BOOL secure);
 
